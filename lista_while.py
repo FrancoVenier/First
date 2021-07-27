@@ -4,7 +4,8 @@ input_usuario = ""
 
 while input_usuario != "FIN":
     input_usuario = input("¿Qué necesitas comprar? (FIN para cerrar sesion): ")
-    mi_lista.append((input_usuario))
+    if input_usuario != "FIN":
+        mi_lista.append((input_usuario))
 
 largo_lista = len(mi_lista)
 indice_actual = 0
