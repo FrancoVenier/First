@@ -7,11 +7,7 @@ while input_usuario != "FIN":
     if input_usuario != "FIN":
         mi_lista.append((input_usuario))
 
-largo_lista = len(mi_lista)
-indice_actual = 0
-
-while indice_actual < largo_lista:
-    print("tengo que compar {}".format (mi_lista[indice_actual]))
-    indice_actual += 1
+for item in mi_lista:
+    print("tengo que comprar {}".format(item))
 
 print("Esta es la lista de la compra")
